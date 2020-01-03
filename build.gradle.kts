@@ -23,7 +23,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
-	}
+    }
+    implementation("org.webjars:bootstrap:3.3.7")
+    implementation("org.webjars:jquery:3.4.1")
 }
 
 tasks.withType<Test> {
